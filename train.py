@@ -21,7 +21,7 @@ from tqdm import tqdm
 import click
 import numpy as np
 
-from pspnet import PSPNet
+from PSPnet.pspnet import PSPNet
 
 models = {
     'squeezenet': lambda: PSPNet(sizes=(1, 2, 3, 6), psp_size=512, deep_features_size=256, backend='squeezenet'),
